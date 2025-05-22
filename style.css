@@ -1,0 +1,119 @@
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    position: relative;
+    background-color: #0096c0;
+    color: white;
+    text-align: center;
+}
+
+html {
+    font-size: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 50rem;
+    background: linear-gradient(to right bottom, #1ab2d7, #1a9cc4);
+    left: 50%;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.034);
+
+    transform: translate(-50%, 20%);
+
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.today-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.today-info div {
+    width: 48%;
+}
+
+.today-info div:nth-child(n+3) {
+    background-color: #31b1d3;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.temp {
+    background-color: none;
+}
+
+.next-days {
+    display: flex;
+    justify-content: space-between;
+}
+
+.next-days-card {
+    background-color: #31b1d3;
+    width: 18.5%;
+    border-radius: 5px;
+    padding: 10px;
+
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.021);
+}
+
+.next-days-card-title {
+    margin: 0 0 8px 0;
+}
+
+.next-days-card-temp {
+    margin: 4px 0 0 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 0.5rem;
+}
+
+.date {
+    font-size: 1.2rem;
+    color: #a3e9fc;
+    transform: translateY(-10px);
+}
+
+.temp p {
+    font-size: 3.5rem;
+    margin: 0;
+    transform: translateY(-10px);
+}
+
+.today-info .icon {
+    width: 30px;
+    transform: translateY(-5px);
+}
+
+.icon {
+    width: 30px;
+    transform: translateY(0);
+}
+
+.today-info .title {
+    color: #a3e9fc;
+    margin: 0;
+}
+
+.today-info .value {
+    font-size: 1.4rem;
+    margin: 5px 0 0 0;
+}
